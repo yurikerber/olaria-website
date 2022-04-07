@@ -1,5 +1,5 @@
 # Olaria Web-site
 
-Site desenvolvido na aula do Crie_TI para prática de CSS.
+Site developed in the Crie_TI class for HTML/CSS practice.
 
 2022 © Olaria Alegria - Crie_TI
