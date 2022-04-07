@@ -13,7 +13,54 @@
     Rodapé: #424242
     Branco: #ffffff
     -->
+    <style>
+        h1 {
+            color: #f9742b;
+        }
 
+        h2 {
+            color: #494949;
+        }
+
+        h3 {
+            color: #494949;
+        }
+
+        #sobre {
+            background-color: #f6f8f3;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        #orcamento {
+            background-color: #f9742b;
+            color: #ffffff;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+        }
+
+        #orcamento h3 {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #424242;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .imgp {
+            width: 50%;
+        }
+        
+        .banner {
+            width: 100%;
+        }
+
+    </style>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
 
@@ -21,37 +68,41 @@
     <header>
         <h1>Olaria Alegria</h1>
         <h2>Tradição e qualidade na fabricação de tijolos</h2>
-        <ul>
-            <li><a href="https://www.google.com/">Produto</a></li>
-            <li><a href="https://www.google.com/">Sobre</a></li>
-            <li><a href="https://www.google.com/">Orçamento</a></li>
-            <li><a href="https://www.google.com/">Contato</a></li>
-        </ul>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
-    <img src="images/banner.jpg">
     <br>
-    <section>
+    <img class="banner" src="images/banner.jpg">
+    <br>
+    <section id="produtos">
         <h3>Produtos</h3>
         <div>
-            <img src="images/blocos-ceramicos.jpg">
+            <img class="imgp" src="images/blocos-ceramicos.jpg">
             <div><b>Blocos Cerâmicos</b></div>
         </div>
+        <br>
         <div>
-            <img src="images/lajes.jpg">
+            <img class="imgp" src="images/lajes.jpg">
             <div><b>Lajes</b></div>
         </div>
+        <br>
         <div>
-            <img src="images/artefatos-de-concreto.png">
+            <img class="imgp" src="images/artefatos-de-concreto.png">
             <div><b>Artefatos de concreto</b></div>
         </div>
+        <br>
         <div>
-            <img src="images/estruturas-pre-moldadas.jpg" description="Estruturas pré-moldadas">
+            <img class="imgp" src="images/estruturas-pre-moldadas.jpg" description="Estruturas pré-moldadas">
             <div><b>Estruturas pre moldadas</b></div>
         </div>
     </section>
     <br>
     <br>
-    <section>
+    <section id="sobre">
         <h3>Sobre nós</h3>
         <h5><b>Conheça um pouco de nossa tradição e história</b></h5>
         <p>Fundada em 1900 pelo avô do atual proprietário, a <b>Olaria Alegria</b> é o resultado de muita vivência,
@@ -68,19 +119,19 @@
     </section>
     <br>
     <br>
-    <section>
-        <h2>Solicite um orçamento</h2>
-        <p>ntre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica para
+    <section id="orcamento">
+        <h3>Solicite um orçamento</h3>
+        <p>Entre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica para
             aumentar o nível de segurança em sua obra.</p>
     </section>
     <br>
     <br>
-    <section>
+    <section id="contato">
         <h3>Contato</h3>
         <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
         <br>
-        <div>Telefone: (00) 99999-9999</div><br>
-        <div>E-mail: contato@olariaalegria.com.br</div>
+        <div><a href="tel:+55999999999">Telefone: (00) 99999-9999</a></div>
+        <div><a href="mailto:contato@olariaalegria.com.br">E-mail: contato@olariaalegria.com.br</a></div>
     </section>
     <br>
     <br>
