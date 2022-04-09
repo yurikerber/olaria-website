@@ -44,6 +44,20 @@
             color: #ffffff;
         }
 
+        #orcamento,
+        address,
+        #contato,
+        #sobre {
+            padding-left: 200px;
+            padding-right: 200px;
+            position: static;
+        }
+
+        #produtos {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
         footer {
             background-color: #424242;
             color: #ffffff;
@@ -52,14 +66,30 @@
             padding-bottom: 40px;
         }
 
-        .imgp {
-            width: 50%;
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 5px;
+            padding-bottom: 200px;
         }
-        
+
+        .img {
+            width: 700px;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .txt {
+            margin-top: 1px;
+            margin-bottom: 1px;
+            text-align: center;
+        }
+
+
         .banner {
             width: 100%;
         }
-
     </style>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
@@ -78,70 +108,76 @@
     <br>
     <img class="banner" src="images/banner.jpg">
     <br>
-    <section id="produtos">
-        <h3>Produtos</h3>
-        <div>
-            <img class="imgp" src="images/blocos-ceramicos.jpg">
-            <div><b>Blocos Cerâmicos</b></div>
-        </div>
+    <br>
+    <main id="main">
+        <section id="produtos">
+            <h3>Produtos</h3>
+            <section id="grid">
+                <div id="top">
+                    <span>
+                        <img class="img" src="images/blocos-ceramicos.jpg">
+                        <p class="txt"><b>Blocos Cerâmicos</b></p>
+                        <img class="img" src="images/lajes.jpg">
+                        <p class="txt"><b>Lajes</b></p>
+                    </span>
+                </div>
+                <div id="bottom">
+                    <span>
+                        <img class="img" src="images/artefatos-de-concreto.png">
+                        <p class="txt"><b>Artefatos de concreto</b></p>
+                    </span>
+                    <span>
+                        <img class="img" src="images/estruturas-pre-moldadas.jpg" description="Estruturas pré-moldadas">
+                        <p class="txt"><b>Estruturas pre moldadas</b></p>
+                    </span>
+                </div>
+            </section>
+        </section>
         <br>
-        <div>
-            <img class="imgp" src="images/lajes.jpg">
-            <div><b>Lajes</b></div>
-        </div>
         <br>
-        <div>
-            <img class="imgp" src="images/artefatos-de-concreto.png">
-            <div><b>Artefatos de concreto</b></div>
-        </div>
+        <section id="sobre">
+            <h3>Sobre nós</h3>
+            <h5><b>Conheça um pouco de nossa tradição e história</b></h5>
+            <p>Fundada em 1900 pelo avô do atual proprietário, a <b>Olaria Alegria</b> é o resultado de muita vivência,
+                experiência e aprendizado no ramo de fabricação de blocos, lajes, artefatos e pré-moldados.</p>
+            <p>Nossos produtos seguem sempre um alto padrão de qualidade. Oferecemos os melhores preços e atendimento
+                personalizado.</p>
+            <p>Se você está construindo, é arquiteto ou engenheiro, ou ainda um representante ou revendedor de materiais
+                de
+                construção venha nos procurar e beneficie-se da experiência de tantos anos neste ramo.
+            </p>
+            <div id="video" align="center"><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/ZRIW6PdEEh8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </section>
         <br>
-        <div>
-            <img class="imgp" src="images/estruturas-pre-moldadas.jpg" description="Estruturas pré-moldadas">
-            <div><b>Estruturas pre moldadas</b></div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <section id="sobre">
-        <h3>Sobre nós</h3>
-        <h5><b>Conheça um pouco de nossa tradição e história</b></h5>
-        <p>Fundada em 1900 pelo avô do atual proprietário, a <b>Olaria Alegria</b> é o resultado de muita vivência,
-            experiência e aprendizado no ramo de fabricação de blocos, lajes, artefatos e pré-moldados.</p>
-        <p>Nossos produtos seguem sempre um alto padrão de qualidade. Oferecemos os melhores preços e atendimento
-            personalizado.</p>
-        <p>Se você está construindo, é arquiteto ou engenheiro, ou ainda um representante ou revendedor de materiais de
-            construção venha nos procurar e beneficie-se da experiência de tantos anos neste ramo.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZRIW6PdEEh8" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </section>
-    <br>
-    <br>
-    <section id="orcamento">
-        <h3>Solicite um orçamento</h3>
-        <p>Entre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica para
-            aumentar o nível de segurança em sua obra.</p>
-    </section>
-    <br>
-    <br>
-    <section id="contato">
-        <h3>Contato</h3>
-        <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
         <br>
-        <div><a href="tel:+55999999999">Telefone: (00) 99999-9999</a></div>
-        <div><a href="mailto:contato@olariaalegria.com.br">E-mail: contato@olariaalegria.com.br</a></div>
-    </section>
-    <br>
-    <br>
-    <section>
-        <address>Endreço: Olaria Alegria<br>
-            Estrada sem nome, 1234<br>
-            Bairro - Cidade - UF - CEP: 12345-678</address>
-    </section>
-    <br>
-    <br>
+        <section id="orcamento">
+            <h3>Solicite um orçamento</h3>
+            <p>Entre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica
+                para
+                aumentar o nível de segurança em sua obra.</p>
+        </section>
+        <br>
+        <br>
+        <section id="contato">
+            <h3>Contato</h3>
+            <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
+            <br>
+            <div><a href="tel:+55999999999">Telefone: (00) 99999-9999</a></div>
+            <div><a href="mailto:contato@olariaalegria.com.br">E-mail: contato@olariaalegria.com.br</a></div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <address>Endreço: Olaria Alegria<br>
+                Estrada sem nome, 1234<br>
+                Bairro - Cidade - UF - CEP: 12345-678</address>
+        </section>
+        <br>
+        <br>
+    </main>
     <footer>
         <span>2022 © Olaria Alegria - Crie_TI</span>
     </footer>
