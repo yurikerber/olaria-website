@@ -3,21 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Olaria Alegria</title>
-    <!-- Título: #f9742b
-    Subtítulo: #494949
-    Sobre: #f6f8f3
-    Orçamento: #f9742b 
-    Rodapé: #424242
-    Branco: #ffffff
-    -->
     <style>
-        h1 {
-            color: #f9742b;
-        }
-
         h2 {
             color: #494949;
         }
@@ -26,158 +15,232 @@
             color: #494949;
         }
 
-        #sobre {
+        #about {
             background-color: #f6f8f3;
             padding-top: 40px;
             padding-bottom: 40px;
         }
 
-        #orcamento {
+        #quote {
             background-color: #f9742b;
             color: #ffffff;
             padding-top: 40px;
             padding-bottom: 40px;
-
         }
 
-        #orcamento h3 {
+        #quote h3 {
             color: #ffffff;
-        }
-
-        #orcamento,
-        address,
-        #contato,
-        #sobre {
-            padding-left: 200px;
-            padding-right: 200px;
-            position: static;
-        }
-
-        #produtos {
-            padding-left: 200px;
-            padding-right: 200px;
         }
 
         footer {
             background-color: #424242;
             color: #ffffff;
-            text-align: center;
             padding-top: 40px;
             padding-bottom: 40px;
+            text-align: center;
         }
 
-        #grid {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(8, 5vw);
-            grid-gap: 5px;
-            padding-bottom: 200px;
-        }
-
-        .img {
-            width: 700px;
-            height: 450px;
+        .product-image {
+            width: 100%;
+            height: 400px;
             object-fit: cover;
         }
 
-        .txt {
-            margin-top: 1px;
-            margin-bottom: 1px;
+        .product-name {
             text-align: center;
+            font-weight: bold;
+            font-size: 20px;
         }
-
 
         .banner {
             width: 100%;
         }
+
+        .column {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .row {
+            margin: -10px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .container {
+            width: 1200px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video {
+            width: 700px;
+            height: 400px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #form {
+            width: 1200px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-control {
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-sizing: border-box;
+        }
+
+        .form {
+            padding-bottom: 20px;
+        }
+
+        .form-text {
+            font-weight: bold;
+        }
+
+        .selection {
+            margin-bottom: 25px;
+        }
     </style>
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
 
 <body>
     <header>
-        <h1>Olaria Alegria</h1>
+        <h1 style="color: #f9742b">Olaria Alegria</h1>
         <h2>Tradição e qualidade na fabricação de tijolos</h2>
         <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#orcamento">Orçamento</a>
-            <a href="#contato">Contato</a>
+            <a href="#products">Produtos</a>
+            <a href="#about">Sobre</a>
+            <a href="#quote">Orçamento</a>
+            <a href="#contact">Contato</a>
         </nav>
+        <img class="banner" src="images/banner.jpg" />
     </header>
-    <br>
-    <img class="banner" src="images/banner.jpg">
-    <br>
-    <br>
-    <main id="main">
-        <section id="produtos">
-            <h3>Produtos</h3>
-            <section id="grid">
-                <div id="top">
-                    <span>
-                        <img class="img" src="images/blocos-ceramicos.jpg">
-                        <p class="txt"><b>Blocos Cerâmicos</b></p>
-                        <img class="img" src="images/lajes.jpg">
-                        <p class="txt"><b>Lajes</b></p>
-                    </span>
-                </div>
-                <div id="bottom">
-                    <span>
-                        <img class="img" src="images/artefatos-de-concreto.png">
-                        <p class="txt"><b>Artefatos de concreto</b></p>
-                    </span>
-                    <span>
-                        <img class="img" src="images/estruturas-pre-moldadas.jpg" description="Estruturas pré-moldadas">
-                        <p class="txt"><b>Estruturas pre moldadas</b></p>
-                    </span>
-                </div>
-            </section>
-        </section>
-        <br>
-        <br>
-        <section id="sobre">
+    <br />
+    <br />
+    <section id="products" class="container">
+        <h3>Produtos</h3>
+        <div class="row">
+            <div class="column">
+                <img class="product-image" src="images/blocos-ceramicos.jpg" />
+                <div class="product-name">Blocos cerâmicos</div>
+            </div>
+            <div class="column">
+                <img class="product-image" src="images/lajes.jpg" />
+                <div class="product-name">Lajes</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="column">
+                <img class="product-image" src="images/artefatos-de-concreto.png" />
+                <div class="product-name">Artefatos de concreto</div>
+            </div>
+            <div class="column">
+                <img class="product-image" src="images/estruturas-pre-moldadas.jpg" />
+                <div class="product-name">Estruturas pré-moldadas</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <br />
+    <br />
+    <section id="about">
+        <div class="container">
             <h3>Sobre nós</h3>
-            <h5><b>Conheça um pouco de nossa tradição e história</b></h5>
-            <p>Fundada em 1900 pelo avô do atual proprietário, a <b>Olaria Alegria</b> é o resultado de muita vivência,
-                experiência e aprendizado no ramo de fabricação de blocos, lajes, artefatos e pré-moldados.</p>
-            <p>Nossos produtos seguem sempre um alto padrão de qualidade. Oferecemos os melhores preços e atendimento
-                personalizado.</p>
+            <h5>Conheça um pouco de nossa tradição e história</h5>
+            <p>Fundada em 1900 pelo avô do atual proprietário, a <strong>Olaria Alegria</strong> é o resultado de muita
+                vivência, experiência e aprendizado no ramo de fabricação de blocos, lajes, artefatos e pré-moldados.
+            </p>
+            <p>Nossos produtos seguem sempre um alto padrão de qualidade e oferecemos os melhores preços, as melhores
+                formas
+                de pagamento e atendimento personalizado.</p>
             <p>Se você está construindo, é arquiteto ou engenheiro, ou ainda um representante ou revendedor de materiais
                 de
-                construção venha nos procurar e beneficie-se da experiência de tantos anos neste ramo.
-            </p>
-            <div id="video" align="center"><iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/ZRIW6PdEEh8" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-        </section>
-        <br>
-        <br>
-        <section id="orcamento">
+                construção venha nos procurar e beneficie-se da experiência de tantos anos neste ramo.</p>
+            <iframe class="video" src="https://www.youtube.com/embed/ZRIW6PdEEh8" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <br />
+    <br />
+    <section id="quote">
+        <div class="container">
             <h3>Solicite um orçamento</h3>
             <p>Entre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica
                 para
                 aumentar o nível de segurança em sua obra.</p>
-        </section>
-        <br>
-        <br>
-        <section id="contato">
-            <h3>Contato</h3>
-            <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
-            <br>
-            <div><a href="tel:+55999999999">Telefone: (00) 99999-9999</a></div>
-            <div><a href="mailto:contato@olariaalegria.com.br">E-mail: contato@olariaalegria.com.br</a></div>
-        </section>
-        <br>
-        <br>
-        <section>
-            <address>Endreço: Olaria Alegria<br>
-                Estrada sem nome, 1234<br>
-                Bairro - Cidade - UF - CEP: 12345-678</address>
-        </section>
-        <br>
-        <br>
-    </main>
+
+            <form action="" id="form">
+                <div class="form">
+                    <label for="name" class="form-text">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" class="form-control">
+                </div>
+                <div class="form">
+                    <label for="email" class="form-text">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" class="form-control">
+                </div>
+                <div class="form">
+                    <label for="tel" class="form-text">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="off" class="form-control">
+                </div>
+                <div class="selection">
+                    <label for="products" class="form-text">Produto:</label>
+                    <select name="products" id="products-selecao" aria-placeholder="Selecione" class="form-control">
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="artefatos-de-concreto">Artefatos de concreto</option>
+                        <option value="blocos-ceramicos">Blocos ceramicos</option>
+                        <option value="estruturas-pre-moldadas">Estruturas pré-moldadas</option>
+                        <option value="lajes">Lajes</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="arch" class="form-text">Anexos:</label><br>
+                    <input type="file" name="arch" id="arch" placeholder="Escolher arquivo"><br>
+                </div>
+                <div class="form">
+                    <label for="mensagem" class="form-text">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" class="form-control"
+                        rows="6"></textarea col="300"></textarea><br>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="form-control">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br />
+    <br />
+    <section id="contact" class="container">
+        <h3>Contato</h3>
+        <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
+        <div><a href="tel:+550099999999">(00) 9999-9999</a></div>
+        <div><a href="mailto:contato@olariaalegria.com.br">contato@olariaalegria.com.br</a></div>
+        <br />
+        <address>
+            Olaria Alegria<br />
+            Estrada sem nome, 1234<br />
+            Bairro - Cidade - UF - CEP: 12345-678<br />
+        </address>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
         <span>2022 © Olaria Alegria - Crie_TI</span>
     </footer>
