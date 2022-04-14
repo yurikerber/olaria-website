@@ -55,6 +55,9 @@
 
         .banner {
             width: 100%;
+            margin-top: 80px;
+            height: 600px;
+            object-fit: cover;
         }
 
         .column {
@@ -62,11 +65,11 @@
             display: inline-block;
             float: left;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 5px;
         }
 
         .row {
-            margin: -10px;
+            margin: -5px;
         }
 
         .clearfix {
@@ -113,21 +116,59 @@
         .selection {
             margin-bottom: 25px;
         }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            height: 82px;
+        }
+
+        .brand-name {
+            color: #f9742b;
+            margin-right: 20px;
+        }
+
+        .brand-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .brand-phrase {
+            margin-left: 0px;
+            margin-right: auto;
+        }
+
+        .opcoes-menu a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 style="color: #f9742b">Olaria Alegria</h1>
-        <h2>Tradição e qualidade na fabricação de tijolos</h2>
-        <nav>
+        <h1 class="brand-name"><a href="#banner">Olaria Alegria</a></h1>
+        <h2 class="brand-phrase">Tradição e qualidade na fabricação de tijolos</h2>
+        <nav class="opcoes-menu">
+            <a href="#banner">Inicio</a>
             <a href="#products">Produtos</a>
             <a href="#about">Sobre</a>
             <a href="#quote">Orçamento</a>
             <a href="#contact">Contato</a>
         </nav>
-        <img class="banner" src="images/banner.jpg" />
     </header>
+    <section id="banner">
+        <img class="banner" class="banner" src="images/banner.jpg" />
+    </section>
     <br />
     <br />
     <section id="products" class="container">
@@ -192,11 +233,13 @@
                 </div>
                 <div class="form">
                     <label for="email" class="form-text">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" class="form-control">
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="off"
+                        class="form-control">
                 </div>
                 <div class="form">
                     <label for="tel" class="form-text">Telefone:</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="off" class="form-control">
+                    <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="off"
+                        class="form-control">
                 </div>
                 <div class="selection">
                     <label for="products" class="form-text">Produto:</label>
